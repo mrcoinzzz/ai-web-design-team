@@ -2,11 +2,13 @@
 
 **Turn “make this website better” into a clear design direction, working changes, and checks that the important stuff still works.**
 
-One reusable skill brings together a design lead and three specialists in messaging, visual design, and clarity/accessibility. Use it to **review a website**, **redesign an existing site**, or **build from scratch**.
+Meet **Alex, Sam, River, and Kit**: your AI web design team. Alex coordinates the work; Sam sharpens the words; River shapes the look; Kit checks that the site is clear and usable. Use the team to **review a website**, **redesign an existing site**, or **build from scratch**.
 
 Designed for **Codex, Claude Code, Cursor, and GitHub Copilot**. The team is a set of Markdown instructions your coding agent follows with its available tools. No separate AI service, API key, or framework is required by this pack. Your agent subscription and website dependencies still apply.
 
 [Get started](#get-started) · [Example prompts](docs/prompts.md) · [Setup by tool](docs/setup.md) · [Meet the team](#meet-the-team) · [Troubleshooting](docs/setup.md#troubleshooting)
+
+**New to AI design?** A *skill* is a reusable guide for your AI assistant. You talk to Alex in one conversation, and Alex brings in the relevant specialties and gives you one clear result. Start with [your first session](docs/first-session.md); you don't need design vocabulary or experience managing agents.
 
 ## Get started
 
@@ -39,15 +41,17 @@ The installer needs Python 3.9+ and copies the complete skill into the tool's pr
 For **Codex**:
 
 ```text
-Use $ai-web-design-team to review this website. Give me the five most
-useful improvements with exact copy or layout changes. Review only.
+Use $ai-web-design-team. Alex, help me understand how to improve this
+website. Review it with the team and explain the five most useful
+changes in plain language. Don't edit anything yet.
 ```
 
 For **Claude Code**:
 
 ```text
-/ai-web-design-team Review this website. Give me the five most useful
-improvements with exact copy or layout changes. Review only.
+/ai-web-design-team Alex, help me understand how to improve this website.
+Review it with the team and explain the five most useful changes in
+plain language. Don't edit anything yet.
 ```
 
 In **Cursor**, type `/` and select `ai-web-design-team`, then give the request. In **Copilot agent mode**, ask it to use the `ai-web-design-team` skill to review this website. [Tool setup and official sources](docs/setup.md).
@@ -69,23 +73,27 @@ Add **“Use one agent”** to reduce usage, or **“Focus only on the pricing p
 
 ## Meet the team
 
-| Role | Owns | Hands back |
+| Team member | How they help | Hands back |
 | --- | --- | --- |
-| **Design lead** | Scope, user journey, decisions, implementation, final checks | One direction and a completed result |
-| **Messaging and CTA specialist** | What the site says and what visitors do next | Exact headlines, action labels, and content changes |
-| **Visual design specialist** | Composition, typography, spacing, imagery, brand | A concrete direction and component guidance |
-| **Clarity and accessibility specialist** | Comprehension, controls, navigation, responsive usability | Specific fixes and verification methods |
+| **Alex — Design Lead** | Keeps the work focused, combines advice, makes changes, and checks the result | One direction and a completed result |
+| **Sam — Messaging & CTA** | Makes the offer clear and the next action easy to understand | Exact headlines, button/link labels, and copy changes |
+| **River — Visual Design** | Makes layout, type, spacing, imagery, and brand work together | A concrete direction and reusable visual choices |
+| **Kit — Clarity & Accessibility** | Checks that people can understand and use the site across relevant devices and interactions | Specific usability fixes and checks |
 
-For substantial work, the lead requests independent specialist subagents when the host supports them. For small tasks, limited tools, or a single-agent request, it applies the same lenses sequentially. It reports which happened. The pack does not require persistent agents, a particular model, or Claude Code's separate Agent Teams feature.
+*CTA* means *call to action*: a button or link such as “Book a call” that invites the visitor to take the next step.
 
-The lead resolves disagreements and owns application edits. Reviewers don't edit the same files or hand you three competing reports.
+After selecting the skill, you can say **“River, review the homepage layout”**, **“Sam and Kit, review the signup page”**, or simply **“Alex, help me improve this site.”** Names and role descriptions both work. The names are friendly labels within this skill, not separate commands or persistent people; you don't install each member separately.
+
+For substantial work, Alex requests independent specialist subagents—separate AI review tasks—when the host supports them. For a named subset, Alex uses only the requested specialties. For small tasks, limited tools, or a single-agent request, Alex applies the relevant review lenses directly and says so. The pack does not require persistent agents, a particular model, or Claude Code's separate Agent Teams feature.
+
+Alex resolves disagreements and owns application edits. Reviewers don't edit the same files or hand you three competing reports.
 
 ```mermaid
 flowchart LR
-    A[Your brief + site evidence] --> B[Design lead]
-    B --> C[Messaging]
-    B --> D[Visual design]
-    B --> E[Clarity + accessibility]
+    A[Your brief + site evidence] --> B[Alex: Design Lead]
+    B --> C[Sam: Messaging]
+    B --> D[River: Visual Design]
+    B --> E[Kit: Clarity + Accessibility]
     C --> F[One prioritized direction]
     D --> F
     E --> F

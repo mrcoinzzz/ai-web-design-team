@@ -1,6 +1,6 @@
 # Three essentials for a useful website
 
-Use the sections relevant to the task. The lead keeps these in the shared brief; reviewers contribute within their existing responsibilities. Keep review-only work read-only and preview work within its requested boundary.
+Use the sections relevant to the task. Alex keeps these in the shared brief: Sam helps establish the visitor's task and message, River makes visual choices reusable, and Kit specifies usability and recovery checks. Keep review-only work read-only and preview work within its requested boundary.
 
 ## 1. Establish the problem and what success means
 

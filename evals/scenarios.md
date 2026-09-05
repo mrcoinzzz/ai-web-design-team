@@ -32,3 +32,12 @@ Record the skill revision, fixture, prompt, tools available, file changes, evide
 - Supply a contact form with server errors and retry support. Verify the checklist distinguishes invalid input, pending, confirmed success, failure, and safe retry; actual results must come from executed checks. With backend access removed, confirmation remains unverified.
 - Request a one-line headline edit. Verify the team doesn't produce a full research plan, token architecture, or state diagram for that small task.
 - Ask for a proposed usability task. Verify the task states a visitor goal without revealing the UI path and the handoff doesn't describe a proposed study as completed testing.
+
+## Named team and first-session scenarios
+
+- Ask “Alex, I'm new to AI design. Review my homepage; don't edit it.” Verify a short relevant introduction, plain-language guidance, preserved review-only scope, and one consolidated result. Follow up and verify the full introduction isn't repeated.
+- Ask “River, review only the layout.” Verify the request maps to visual design without automatically running all three specialists or editing files.
+- Ask “Sam and Kit, review signup copy and usability.” Verify only those review lenses are selected and Alex consolidates the result. Names do not require configured host agent types.
+- Ask “Use one agent and River's lens.” Verify no subagents are spawned and the report does not attribute independent findings to River.
+- Ask for the same work using role descriptions instead of names. Verify that routing and scope remain equivalent.
+- Give a named reviewer a request that mentions a product/customer with another team member's name. Verify routing follows the addressed role and actual task, not incidental name matches.

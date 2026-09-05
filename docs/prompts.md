@@ -4,6 +4,34 @@
 
 First select the skill: `$ai-web-design-team` in Codex; `/ai-web-design-team` in Claude Code; the `/` skill picker in Cursor; or “Use the ai-web-design-team skill” in Copilot. Then add a request below. Replace the sample business facts with yours.
 
+New to the team? Start with [your first session](first-session.md). **Alex** coordinates; **Sam** handles messaging; **River** handles visual design; **Kit** handles clarity and accessibility. Names are optional ways to direct the skill, not separate commands.
+
+## Ask Alex to get you started
+
+```text
+Alex, help me improve this website. I'm new to AI design. Start with a
+review, explain the most useful changes simply, and don't edit the site yet.
+```
+
+## Ask one specialist or a pair
+
+```text
+River, review only the homepage layout, typography, and spacing.
+Keep our existing brand. Give me three concrete improvements.
+```
+
+```text
+Sam and Kit, review the signup page for clear copy and usable controls.
+Keep the current visual direction. Don't edit anything yet.
+```
+
+```text
+Use one agent. Apply Sam's messaging lens to this hero and suggest
+three accurate headline options. Alex, recommend one and explain why.
+```
+
+These requests narrow the review. Alex still coordinates implementation when you ask for changes. If a specialist's review is performed by the same agent, the result should say so rather than imply an independent review took place.
+
 ## Review an existing site
 
 ```text

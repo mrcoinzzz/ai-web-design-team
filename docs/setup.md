@@ -6,6 +6,8 @@ Install in the **website project you want to work on**. This repository stores t
 
 The optional installer requires Python 3.9+ and uses only the standard library. Run it from the downloaded repository with an existing website folder as `--project`. It copies the full skill, makes no network calls, and refuses to replace an existing destination.
 
+One installation includes **Alex — Design Lead**, **Sam — Messaging & CTA**, **River — Visual Design**, and **Kit — Clarity & Accessibility**. After invoking the skill, address them naturally in your request. They are role labels; there are no separate `/alex`, `/sam`, `/river`, or `/kit` commands. See [your first session](first-session.md) for a guided introduction.
+
 ## Codex
 
 ```sh
