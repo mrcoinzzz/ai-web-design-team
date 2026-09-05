@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Web Design Team"
+  short_description: "Review, redesign, and build websites with a design team"
+  default_prompt: "Use $ai-web-design-team to improve this website’s design and messaging while preserving its functionality."
