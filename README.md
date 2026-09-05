@@ -1,86 +1,116 @@
 # AI Web Design Team
 
-A reusable design team for your coding agent. Review an existing website, redesign it without breaking its flows, or build a new site from a brief.
+**Turn “make this website better” into a clear design direction, working changes, and checks that the important stuff still works.**
 
-**One skill to invoke. Three specialists. One lead responsible for the result.**
+One reusable skill brings together a design lead and three specialists in messaging, visual design, and clarity/accessibility. Use it to **review a website**, **redesign an existing site**, or **build from scratch**.
 
-This first version is an instruction-only skill for Codex. It includes focused role playbooks, scope rules, and implementation checks. No API keys, package installation, or hosted service are required by the skill itself; inspecting and building a site uses your agent's available tools and your project's dependencies.
+Designed for **Codex, Claude Code, Cursor, and GitHub Copilot**. The team is a set of Markdown instructions your coding agent follows with its available tools. No separate AI service, API key, or framework is required by this pack. Your agent subscription and website dependencies still apply.
+
+[Get started](#get-started) · [Example prompts](docs/prompts.md) · [Setup by tool](docs/setup.md) · [Meet the team](#meet-the-team) · [Troubleshooting](docs/setup.md#troubleshooting)
+
+## Get started
+
+### 1. Download the team
+
+Use **Code → Download ZIP** on GitHub and extract it, or run:
+
+```sh
+git clone https://github.com/mrcoinzzz/ai-web-design-team.git
+cd ai-web-design-team
+```
+
+### 2. Install in your website project
+
+Run **one** command from the downloaded team folder. Replace `/path/to/your-website` with your website folder. For a new site, create an empty project folder first.
+
+| Your tool | Installation command |
+| --- | --- |
+| Codex | `python3 scripts/install.py codex --project "/path/to/your-website"` |
+| Claude Code | `python3 scripts/install.py claude --project "/path/to/your-website"` |
+| Cursor | `python3 scripts/install.py cursor --project "/path/to/your-website"` |
+| GitHub Copilot | `python3 scripts/install.py copilot --project "/path/to/your-website"` |
+
+The installer needs Python 3.9+ and copies the complete skill into the tool's project folder. It refuses to overwrite an existing installation and does not change agent settings. Add `--dry-run` to see the destination first. On Windows, use `py -3` instead of `python3` and a Windows project path.
+
+**No Python?** Copy the folder manually using the [setup guide](docs/setup.md). **Multiple tools?** Read the [shared installation guidance](docs/setup.md#using-more-than-one-tool) before making duplicate copies.
+
+### 3. Open your website project and ask
+
+For **Codex**:
+
+```text
+Use $ai-web-design-team to review this website. Give me the five most
+useful improvements with exact copy or layout changes. Review only.
+```
+
+For **Claude Code**:
+
+```text
+/ai-web-design-team Review this website. Give me the five most useful
+improvements with exact copy or layout changes. Review only.
+```
+
+In **Cursor**, type `/` and select `ai-web-design-team`, then give the request. In **Copilot agent mode**, ask it to use the `ai-web-design-team` skill to review this website. [Tool setup and official sources](docs/setup.md).
+
+Give the agent a URL, an open website repository, or screenshots. Include the audience and main action if you know them. You don't need to fill out a questionnaire or manually manage reviewers.
+
+## Choose the job
+
+After invoking the skill, use one of these requests:
+
+| Job | What to ask | What you get |
+| --- | --- | --- |
+| Review | “Review the homepage. Don't edit it.” | Prioritized findings with evidence and exact changes |
+| Redesign | “Redesign and implement the homepage. Keep signup and forms working.” | A coherent direction, updated site, before/after evidence where available, and checks |
+| Build | “Build a site for my tutoring business. The main action is booking a call.” | Page/flow plan, design direction, working requested pages, and verification |
+| Preview only | “Show a redesign in a separate preview. Don't edit the app.” | A labeled concept; application files remain unchanged |
+
+Add **“Use one agent”** to reduce usage, or **“Focus only on the pricing page”** to narrow the work. These are plain-language preferences, not configuration flags. See [ready-to-use prompts](docs/prompts.md) and the optional [brief template](docs/brief.md).
 
 ## Meet the team
 
-| Role | Responsibility |
-| --- | --- |
-| Lead coordinator | Establish context, reconcile advice, implement, and verify |
-| Messaging and CTA specialist | Value proposition, headlines, action copy, reassurance |
-| Visual design specialist | Layout, hierarchy, typography, spacing, color, brand |
-| Clarity and accessibility specialist | Comprehension, controls, keyboard access, responsive presentation |
-
-The specialists are role instructions, not permanently running agents. For substantive tasks, the skill requests three independent subagents. Small tasks and environments without delegation use the same lenses sequentially. Parallel reviewers consume additional usage. This follows Codex's documented support for [delegation through skill instructions](https://learn.chatgpt.com/docs/agent-configuration/subagents).
-
-## Install in a project
-
-Download or clone this repository. Copy the complete `skills/ai-web-design-team` folder into your website project's `.agents/skills/` directory:
-
-```text
-your-website/
-└── .agents/
-    └── skills/
-        └── ai-web-design-team/
-            ├── SKILL.md
-            ├── agents/openai.yaml
-            └── references/...
-```
-
-Keep the references with the skill. If a copy already exists, review the differences before replacing it. Open the website project in Codex and select the skill or mention `$ai-web-design-team`. If discovery does not refresh, restart Codex. See the official [skill format and discovery documentation](https://learn.chatgpt.com/docs/build-skills).
-
-You can also try it without copying: ask your agent to read `skills/ai-web-design-team/SKILL.md` from this checkout and apply it to a specified website project. Other agents can read the Markdown playbook, but their discovery and delegation mechanisms may differ; compatibility has not been tested.
-
-## Use it
-
-### Review an existing site
-
-```text
-Use $ai-web-design-team to review https://example.com.
-Our audience is freelance accountants, and the main action is booking a demo.
-Give me prioritized recommendations. Review only; don't edit the site.
-```
-
-### Redesign and implement
-
-```text
-Use $ai-web-design-team to redesign the homepage in this repository.
-Make the offer clearer and the design more confident. Keep our logo,
-signup destinations, forms, and analytics behavior. Implement the changes
-and verify desktop and mobile layouts and the affected interactions.
-```
-
-### Build from scratch
-
-```text
-Use $ai-web-design-team to build a website for a scheduling tool for tutors.
-Create a homepage and features page. The main CTA should link to /signup
-in our existing app. Use a calm, editorial visual direction.
-Do not invent testimonials or pricing. Build a working local preview.
-```
-
-For a visual concept only, add “Preview only; don't change application files.” For lower usage, add “Use one agent and apply the three review lenses sequentially.” You can narrow a task to one page, section, or role.
-
-## What you get
-
-| Mode | Workflow | Result |
+| Role | Owns | Hands back |
 | --- | --- | --- |
-| Review | Inspect → independent review → consolidate | Prioritized findings with evidence, exact changes, and verification criteria |
-| Redesign | Baseline → review → preview → implement → verify | Updated site, comparable before/after evidence where available, behavior checks |
-| Build | Brief → page/flow plan → design → implement → verify | Working requested pages, coherent design direction, verification report |
+| **Design lead** | Scope, user journey, decisions, implementation, final checks | One direction and a completed result |
+| **Messaging and CTA specialist** | What the site says and what visitors do next | Exact headlines, action labels, and content changes |
+| **Visual design specialist** | Composition, typography, spacing, imagery, brand | A concrete direction and component guidance |
+| **Clarity and accessibility specialist** | Comprehension, controls, navigation, responsive usability | Specific fixes and verification methods |
 
-The core rule is to improve appearance and communication while preserving required functionality and flows. Conversion gains remain hypotheses until measured. Reviews report what was actually inspected; screenshots alone cannot prove keyboard access or working forms. Publishing requires a request or existing authorization.
+For substantial work, the lead requests independent specialist subagents when the host supports them. For small tasks, limited tools, or a single-agent request, it applies the same lenses sequentially. It reports which happened. The pack does not require persistent agents, a particular model, or Claude Code's separate Agent Teams feature.
 
-## Customize and contribute
+The lead resolves disagreements and owns application edits. Reviewers don't edit the same files or hand you three competing reports.
 
-The [entry skill](skills/ai-web-design-team/SKILL.md) owns routing and shared rules. [Team responsibilities](skills/ai-web-design-team/references/team.md) define specialist behavior. The other references cover new sites, implementation, and deliverables. Change these directly; no build step is needed.
+```mermaid
+flowchart LR
+    A[Your brief + site evidence] --> B[Design lead]
+    B --> C[Messaging]
+    B --> D[Visual design]
+    B --> E[Clarity + accessibility]
+    C --> F[One prioritized direction]
+    D --> F
+    E --> F
+    F --> G{Requested scope}
+    G --> H[Review report]
+    G --> I[Preview only]
+    G --> J[Implement + verify]
+```
 
-When contributing, include a realistic prompt, the observed weakness, your focused change, and evidence that the behavior improved. Use the [evaluation scenarios](evals/scenarios.md) for manual checks. Avoid adding mandatory specialists or process steps without a demonstrated need.
+## What good work looks like
 
-Status: initial playbook. Structural validation does not establish design quality; this version still needs trials on real websites. The repository includes no live-site evaluation results.
+- **Specific:** exact replacement copy and layout changes instead of “make it pop.”
+- **Coherent:** a direction tailored to the audience and brand, carried across the requested pages.
+- **Functional:** required routes, forms, CTA destinations, integrations, and analytics survive a redesign.
+- **Evidence-based:** visual observations and interaction checks are distinguished. Conversion gains are hypotheses until measured.
+- **Honest:** no invented testimonials, prices, customers, features, successful submissions, or test results.
+
+An [illustrative review](docs/example-review.md) shows the expected detail. Review needs evidence; implementation needs an editable project; rendered verification needs browser tools. The team states gaps instead of pretending tools exist. Deployment follows your requested scope and permissions.
+
+## Customize or contribute
+
+Start by telling the team your brand, preferred examples, and constraints. To change its workflow, edit the [skill](skills/ai-web-design-team/SKILL.md) or its [role playbooks](skills/ai-web-design-team/references/team.md). Installed copies do not update automatically; see [updating and removing](docs/setup.md#updating-and-removing).
+
+Contributions should include a realistic request, the observed problem, and evidence that the change improves the result. [Contributor guide](CONTRIBUTING.md) · [Behavioral scenarios](evals/scenarios.md).
+
+**Validation status:** installation and package checks are automated. Setup paths are based on official documentation. End-to-end behavior and real-site design quality still need evaluation in each host; documentation support is not a claim that every client was tested.
 
 Licensed under the [MIT License](LICENSE).

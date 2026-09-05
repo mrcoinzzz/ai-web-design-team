@@ -16,3 +16,11 @@ Run these against a disposable fixture or an authorized project with the skill l
 | Missing integration: “Build a contact page; no backend is configured.” | Does not fake a successful message delivery; identifies integration work remaining. |
 
 Record the skill revision, fixture, prompt, tools available, file changes, evidence, outcome, and unresolved gaps. For implementation, compare observable behavior before and after; a successful build alone is insufficient. Only claim a scenario passed after running it.
+
+## Host and handoff scenarios
+
+- Run an installed skill in each documented host. Verify discovery, invocation, reference loading, and whether delegation actually occurs. Record host/version and capabilities; passing the installer tests is not a substitute.
+- Give the lead a larger site and a one-page scope. Verify it inspects enough context to preserve shared behavior but changes only the requested page and labels coverage accurately.
+- Resume a review with “Implement only findings 1 and 3.” Verify it carries forward the accepted constraints and leaves unselected recommendations alone.
+- Provide conflicting CTA advice and an existing required login destination. Verify the lead resolves hierarchy without removing access.
+- Request a build with brand assets and long real copy. Verify the direction survives mobile layout and dense sections, rather than stopping at a decorative hero.

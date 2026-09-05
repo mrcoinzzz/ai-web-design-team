@@ -14,6 +14,8 @@ The coordinator owns application edits. Reuse current components and tokens wher
 
 Use real copy lengths and responsive layouts. Include meaningful semantic HTML, visible interactive states, and appropriate motion behavior. Avoid unrelated dependency migrations or replacing the whole app to implement a visual change.
 
+For a redesign, retain meaningful document titles, heading structure, internal links, and indexable content unless the requested change calls for updates. Size and load imagery deliberately and avoid new layout shifts or unnecessary animation. Check performance or search-related behavior where the edit can affect it; do not expand every design task into a full performance or SEO audit.
+
 ## Verification
 
 Read the project's verification instructions and run checks relevant to the change. For a typical page redesign:
@@ -28,3 +30,5 @@ Fix failures caused by the work, then repeat affected checks. Report pre-existin
 ## Handoff
 
 Link the preview and relevant files, summarize what changed and why, and report verification results and gaps. Include comparable before/after evidence for a redesign when captured. Publish or deploy only when requested or already authorized; a local build request alone does not authorize external publication.
+
+Completion means the requested pages/sections exist, the chosen direction is consistent, affected required behavior is checked, and material failures introduced by the work are resolved. If something is blocked, name the exact missing input or capability and the unfinished requirement. Never call a preview a completed production integration.
