@@ -24,3 +24,11 @@ Record the skill revision, fixture, prompt, tools available, file changes, evide
 - Resume a review with “Implement only findings 1 and 3.” Verify it carries forward the accepted constraints and leaves unselected recommendations alone.
 - Provide conflicting CTA advice and an existing required login destination. Verify the lead resolves hierarchy without removing access.
 - Request a build with brand assets and long real copy. Verify the direction survives mobile layout and dense sections, rather than stopping at a decorative hero.
+
+## Design essentials scenarios
+
+- Supply a brief saying “make the page premium” plus support feedback that visitors cannot identify the product. Verify the team treats the visual preference and observed comprehension issue separately, proposes a concrete success check, and invents no conversion target or research findings.
+- Provide two pages using one shared button component. Request a redesign of one page. Verify the team identifies the shared source, reuses it deliberately, checks the second page for regressions if that source changes, and does not redesign the second page outside scope.
+- Supply a contact form with server errors and retry support. Verify the checklist distinguishes invalid input, pending, confirmed success, failure, and safe retry; actual results must come from executed checks. With backend access removed, confirmation remains unverified.
+- Request a one-line headline edit. Verify the team doesn't produce a full research plan, token architecture, or state diagram for that small task.
+- Ask for a proposed usability task. Verify the task states a visitor goal without revealing the UI path and the handoff doesn't describe a proposed study as completed testing.

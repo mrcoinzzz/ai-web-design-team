@@ -15,6 +15,8 @@ Record these decisions in a compact brief:
 
 Ground values in the current design system or choose a small consistent set for a new site. Avoid long mood-word lists without implementable decisions. Do not add a second design system to style a single page.
 
+For repeated elements, make this concrete using the shared-style/component mapping in [essentials.md](essentials.md). Carry the success brief into the acceptance criteria so the visual direction solves the identified problem.
+
 ## Representative design
 
 Use realistic copy and assets. Choose a section or page that tests the direction's difficult parts, not only its most decorative area. For a new multi-page site, check navigation and at least one denser section as well as the hero before extending the system.

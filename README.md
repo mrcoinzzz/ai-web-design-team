@@ -105,6 +105,16 @@ flowchart LR
 
 An [illustrative review](docs/example-review.md) shows the expected detail. Review needs evidence; implementation needs an editable project; rendered verification needs browser tools. The team states gaps instead of pretending tools exist. Deployment follows your requested scope and permissions.
 
+## Three essentials, handled by the team
+
+For substantial work, the existing roles also make these explicit:
+
+1. **A problem worth solving:** the visitor's task, evidence of friction, and what success would look like.
+2. **A small reusable design system:** shared styles and components that keep the requested pages consistent.
+3. **A complete journey:** relevant waiting, error, and recovery states, with actual checks distinguished from proposed user testing.
+
+These fit into the normal brief and handoff. You still invoke one skill; small edits skip unnecessary tables and process. See [what we learned from Designer Skills](docs/design-essentials.md) for the comparison and source links.
+
 ## Customize or contribute
 
 Start by telling the team your brand, preferred examples, and constraints. To change its workflow, edit the [skill](skills/ai-web-design-team/SKILL.md) or its [role playbooks](skills/ai-web-design-team/references/team.md). Installed copies do not update automatically; see [updating and removing](docs/setup.md#updating-and-removing).

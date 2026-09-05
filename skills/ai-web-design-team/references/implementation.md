@@ -8,6 +8,8 @@ Create a representative preview at the level the request warrants: a rendered pa
 
 Keep a compact behavior checklist with location, trigger, expected destination/state, and verification result. For example, a homepage “Start trial” link must retain its signup destination and required query parameters after restyling. A form must retain validation, submission, and error handling.
 
+For affected forms or multi-step interactions, use the state/recovery table in [essentials.md](essentials.md) as the checklist. Include relevant unhappy paths and truthful completion feedback. For changed shared components or tokens, check representative consumers as well as the page under redesign.
+
 ## Implementation ownership
 
 The coordinator owns application edits. Reuse current components and tokens where appropriate. Preserve contracts for routes, event handlers, forms, authentication, payment flows, integrations, and analytics; do not silently remove controls to simplify a composition. When a requested flow change conflicts with preservation, the user's explicit change controls, and its consequences should be verified.

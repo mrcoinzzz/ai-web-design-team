@@ -27,3 +27,5 @@ Provide a compact design rationale, preview/artifact links, implemented scope, a
 | Project checks | Actual command and outcome | Passed, failed, or not run with reason |
 
 Use real results, not a prefilled success table. Mention any deferred requirement or missing business fact that affects readiness. Keep internal specialist notes out of the final unless the user requests them.
+
+For substantive work, summarize the visitor problem and success criterion, the shared style/component sources changed, and the primary journey checks including relevant failure/recovery paths. Fold this into the existing handoff rather than producing three extra reports. Keep unmeasured outcomes and proposed usability studies visibly separate from completed verification.

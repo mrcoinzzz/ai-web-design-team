@@ -69,6 +69,15 @@ Report any remaining evidence gaps.
 
 ## Useful constraints
 
+For a larger redesign, you can make the built-in essentials explicit:
+
+```text
+Redesign and implement this site. Start by explaining the visitor problem
+and what success means. Reuse a small set of shared styles and components.
+Check the main journey, including relevant errors and recovery. Keep this
+in the normal brief and handoff; don't create extra process documents.
+```
+
 - “Keep the existing design system and component library.”
 - “Accessibility and readability take priority over motion effects.”
 - “Use these references for typography and composition; keep our own identity and copy.”

@@ -27,6 +27,8 @@ Inspect the supplied URL, screenshots, files, or repository with available tools
 
 Prepare a concise shared brief: audience, user task, primary action, pages in scope, brand/tone, constraints, evidence inspected, and unknowns. Separate supplied facts from working assumptions. For an existing site, record routes, CTA destinations, forms, state changes, integrations, analytics hooks, and other relevant behavior that must survive. Inspect representative desktop and mobile states when possible.
 
+For substantive work, use the relevant sections of [essentials.md](references/essentials.md) to make three decisions explicit: the user problem and success criteria; shared styles/components to reuse; and the primary journey's states and checks. Fold these into the existing brief and verification report. They are not extra modes, agents, mandatory files, or an intake form. A small copy edit may need only a sentence about the goal and an affected-link check.
+
 Choose the review depth from scope: one component gets focused role lenses; a page or journey gets the team; a larger site gets representative page types and critical flows before expansion. Honor explicit requests for full coverage. State what was sampled and never present a homepage review as a whole-site audit.
 
 If only screenshots or code are available, constrain claims to that evidence. Do not invent live interactions, measured contrast, analytics, or a visual baseline. For a new site there is no before state; read [new-site.md](references/new-site.md) before planning it.
