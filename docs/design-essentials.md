@@ -32,4 +32,4 @@ All three practices live in one short [internal reference](../skills/ai-web-desi
 
 These are independently written adaptations of general practices identified in the linked playbooks. No upstream skill files or plugin configuration are bundled. The broader repository remains useful when a project actually needs a dedicated research, systems, or testing workflow.
 
-**Still missing:** evidence from real projects. Installer tests establish packaging behavior, not whether this team makes better design decisions. The next meaningful evaluation is an existing-site redesign and a new-site build, recording the starting evidence, actual changes, flow checks, and user feedback.
+**Evidence now available:** [fictional worked examples](../examples/README.md) show a redesign and a new build with screenshots and recorded browser checks. Evidence from real projects and human user feedback is still missing; fixture and installer tests do not establish better design decisions or conversion outcomes.

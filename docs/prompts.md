@@ -97,6 +97,23 @@ Report any remaining evidence gaps.
 
 ## Useful constraints
 
+To explore visual preferences before implementation:
+
+```text
+River, keep our logo and blue identity, but make the page less crowded.
+Show two small directions using the same headline and primary action.
+Explain the differences and recommend one. Stop so I can choose before
+you implement it.
+```
+
+To let the team choose and continue:
+
+```text
+River, use our existing brand and make the layout calmer. Keep the
+chosen preferences in the brief. Alex, choose the best direction for
+our audience, implement it, and verify the affected behavior.
+```
+
 For a larger redesign, you can make the built-in essentials explicit:
 
 ```text

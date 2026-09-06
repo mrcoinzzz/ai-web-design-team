@@ -4,6 +4,8 @@
 
 You don't need to know how to design a website or organize AI agents. Describe what you're trying to do, and Alex will coordinate the work and explain the result.
 
+Want to see the result first? Browse the [Clearfile redesign](../examples/clearfile/README.md) or [Northline new build](../examples/northline/README.md). Both are fictional practice sites with actual screenshots and recorded local checks.
+
 ## Meet your team
 
 - **Alex — Design Lead:** your main point of contact. Keeps the work focused and brings the advice together.
@@ -51,6 +53,8 @@ Alex will need an editable project for a build. A local preview lets you inspect
 
 Alex should briefly explain what will be reviewed, ask only for missing information that matters, and begin. The relevant specialties inspect the evidence, and Alex returns one prioritized set of changes with reasons.
 
+Alex first establishes whether this session can inspect the evidence, edit the intended project, render a preview, and use independent reviewers. You don't fill out a checklist. If only screenshots are available, for example, Alex can review them while explaining that live form behavior can't be verified.
+
 You should be able to tell which pages were inspected, what to improve, and what couldn't be checked. A screenshot can reveal layout issues; it cannot prove that a form submits correctly. The team should make that distinction clear.
 
 ## 4. Steer the work naturally
@@ -66,8 +70,12 @@ Continue in the same conversation:
 | Two specialties | “Sam and Kit, review the signup page. Leave the visual design for later.” |
 | Apply selected advice | “Alex, implement recommendations 1 and 3, and check the affected behavior.” |
 | Lower usage | “Use one agent and apply River's visual-design lens.” |
+| Explore the look | “River, show two small directions using the same content. Explain the tradeoffs and wait for my choice.” |
+| Keep preferences consistent | “Keep the quieter direction we chose, the blue palette, and the existing logo.” |
 
 You don't have to use names. “Review the copy” and “Check the mobile layout” work too. Mentioning a name doesn't create a separate conversation or automatically authorize changes. Keep the skill selected or its context available when starting a new session.
+
+You can give River simple preferences: “Keep the colors,” “Less crowded,” or “I like this site's typography.” River turns them into concrete choices and keeps them in the current brief for follow-ups. A clear brief or small edit doesn't need an extra design-selection step.
 
 ## 5. Review the result
 

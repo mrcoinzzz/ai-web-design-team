@@ -8,6 +8,8 @@ Setup guides cover **Codex, Claude Code, Cursor, GitHub Copilot, OpenClaw, and H
 
 [Get started](#get-started) · [Example prompts](docs/prompts.md) · [Setup by tool](docs/setup.md) · [Meet the team](#meet-the-team) · [Troubleshooting](docs/setup.md#troubleshooting)
 
+**See what you get:** [a homepage before and after](examples/clearfile/README.md) and [a new site from a short brief](examples/northline/README.md), with screenshots, runnable examples, and recorded browser checks.
+
 **New to AI design?** A *skill* is a reusable guide for your AI assistant. You talk to Alex in one conversation, and Alex brings in the relevant specialties and gives you one clear result. Start with [your first session](docs/first-session.md); you don't need design vocabulary or experience managing agents.
 
 ## Get started
@@ -61,6 +63,8 @@ In **Cursor**, type `/` and select `ai-web-design-team`, then give the request. 
 In **OpenClaw or Hermes**, after the native installation, ask: “Use the ai-web-design-team skill. Alex, review this website with the team. Don't edit it yet.” Include the URL or project location accessible to that agent.
 
 Give the agent a URL, an open website repository, or screenshots. Include the audience and main action if you know them. You don't need to fill out a questionnaire or manually manage reviewers.
+
+Alex checks what this session can actually inspect, edit, preview, and delegate, and explains only gaps that matter. River uses your likes, dislikes, and existing brand to choose a direction; when useful, you can ask for two small alternatives before deciding. These fit into the normal conversation.
 
 ## Choose the job
 
@@ -133,8 +137,8 @@ Start by telling the team your brand, preferred examples, and constraints. To ch
 
 Contributions should include a realistic request, the observed problem, and evidence that the change improves the result. [Contributor guide](CONTRIBUTING.md) · [Behavioral scenarios](evals/scenarios.md).
 
-**Validation status:** installation and package checks are automated. Setup paths are based on official documentation. End-to-end behavior and real-site design quality still need evaluation in each host; documentation support is not a claim that every client was tested.
+**Validation status:** installation and package checks are automated. The fictional [worked examples](examples/README.md) also have saved browser results and screenshots. Setup paths are based on official documentation. Human newcomer testing, production-site outcomes, and end-to-end execution in every host remain unverified.
 
-Our [next improvement priorities](docs/next-improvements.md) focus on real examples, easier setup diagnosis, and better design preference discovery.
+See [improvement status](docs/improvement-status.md) for what is implemented and the evaluation work still outstanding.
 
 Licensed under the [MIT License](LICENSE).

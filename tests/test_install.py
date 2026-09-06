@@ -85,7 +85,7 @@ class InstallerTests(unittest.TestCase):
 class PackageTests(unittest.TestCase):
     def test_markdown_local_links_resolve(self):
         for path in ROOT.rglob("*.md"):
-            if ".git" in path.parts:
+            if any(part in path.parts for part in (".git", ".example-tools", "node_modules")):
                 continue
             for target in re.findall(r"\]\(([^)]+)\)", path.read_text()):
                 if "://" in target or target.startswith("#"):

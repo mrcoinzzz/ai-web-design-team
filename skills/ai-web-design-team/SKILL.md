@@ -38,6 +38,8 @@ Respect narrower requests: a preview-only request ends with the preview. A reque
 
 ## Establish shared context
 
+At the start of substantive work, apply [session-readiness.md](references/session-readiness.md): establish whether this session can inspect the supplied evidence, edit the intended project when requested, render/check a preview, and delegate. Use observed tool results and available permissions rather than assuming a named host has those capabilities. Explain only consequential gaps and the next useful step, then proceed with accessible work. Do not turn this into a user-filled checklist or repeat it unless the environment changes.
+
 Inspect the supplied URL, screenshots, files, or repository with available tools. Read project instructions and identify the existing stack and design system before choosing implementation tools. Use an applicable site-building skill when available and required by the project; this skill supplies design direction, not a replacement hosting workflow.
 
 Prepare a concise shared brief: audience, user task, primary action, pages in scope, brand/tone, constraints, evidence inspected, and unknowns. Separate supplied facts from working assumptions. For an existing site, record routes, CTA destinations, forms, state changes, integrations, analytics hooks, and other relevant behavior that must survive. Inspect representative desktop and mobile states when possible.
@@ -65,5 +67,7 @@ Use [deliverables.md](references/deliverables.md) for the compact findings and h
 In review mode, return the consolidated report and stop. For redesign/build, read [implementation.md](references/implementation.md), create a coherent representative design, implement the requested scope, and verify appearance and behavior. Preserve the existing design system where it serves the brief; make deliberate changes where evidence supports them. Continue through authorized implementation rather than ending at recommendations.
 
 Before implementation, define the direction using [design-direction.md](references/design-direction.md). Keep one compact working brief rather than repeating all reviewer notes. For multi-step tasks, preserve agreed decisions, unresolved facts, and verification gaps in a short handoff; save it to a file only when useful and within scope. Resume from that state on follow-up requests and implement only the recommendations the user selects.
+
+Let River use [design-preferences.md](references/design-preferences.md) when visual choices need clarification. Use supplied likes, dislikes, references, and retained brand elements first. Offer two small directions only when requested or when a broad task has materially different plausible directions. For authorized implementation, recommend and proceed with a justified direction unless the user requested a selection checkpoint. Keep chosen preferences in the existing brief for follow-ups.
 
 Close with the result, artifact or preview links, checks actually performed, and material unverified items. A static mockup is a mockup; a working website needs working required interactions.

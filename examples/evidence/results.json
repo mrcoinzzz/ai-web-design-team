@@ -1,0 +1,162 @@
+{
+  "generatedAt": "2026-09-06T08:29:39.006Z",
+  "browser": "152.0.7977.76",
+  "kind": "Fictional fixtures; automated browser checks, not user research",
+  "cases": [
+    {
+      "fixture": "clearfile/before.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "screenshot": "clearfile-before-desktop.png",
+      "checks": [
+        "no horizontal overflow",
+        "primary destination matches contract",
+        "all local links resolve",
+        "login destination preserved",
+        "keyboard link focus visible",
+        "primary link reaches section",
+        "empty form rejected",
+        "invalid submission stays idle",
+        "invalid email rejected",
+        "pending prevents duplicate click",
+        "safe input retained on failure",
+        "retry available after failure",
+        "success is explicitly a simulation",
+        "no remote requests",
+        "no JavaScript errors"
+      ],
+      "result": "passed"
+    },
+    {
+      "fixture": "clearfile/before.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "clearfile-before-mobile.png",
+      "checks": [
+        "no horizontal overflow",
+        "primary destination matches contract",
+        "all local links resolve",
+        "login destination preserved",
+        "keyboard link focus visible",
+        "primary link reaches section",
+        "empty form rejected",
+        "invalid submission stays idle",
+        "invalid email rejected",
+        "pending prevents duplicate click",
+        "safe input retained on failure",
+        "retry available after failure",
+        "success is explicitly a simulation",
+        "no remote requests",
+        "no JavaScript errors"
+      ],
+      "result": "passed"
+    },
+    {
+      "fixture": "clearfile/after.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "screenshot": "clearfile-after-desktop.png",
+      "checks": [
+        "no horizontal overflow",
+        "primary destination matches contract",
+        "all local links resolve",
+        "login destination preserved",
+        "keyboard link focus visible",
+        "primary link reaches section",
+        "empty form rejected",
+        "invalid submission stays idle",
+        "invalid email rejected",
+        "pending prevents duplicate click",
+        "safe input retained on failure",
+        "retry available after failure",
+        "success is explicitly a simulation",
+        "no remote requests",
+        "no JavaScript errors"
+      ],
+      "result": "passed"
+    },
+    {
+      "fixture": "clearfile/after.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "clearfile-after-mobile.png",
+      "checks": [
+        "no horizontal overflow",
+        "primary destination matches contract",
+        "all local links resolve",
+        "login destination preserved",
+        "keyboard link focus visible",
+        "primary link reaches section",
+        "empty form rejected",
+        "invalid submission stays idle",
+        "invalid email rejected",
+        "pending prevents duplicate click",
+        "safe input retained on failure",
+        "retry available after failure",
+        "success is explicitly a simulation",
+        "no remote requests",
+        "no JavaScript errors"
+      ],
+      "result": "passed"
+    },
+    {
+      "fixture": "northline/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "screenshot": "northline-new-desktop.png",
+      "checks": [
+        "no horizontal overflow",
+        "primary destination matches contract",
+        "all local links resolve",
+        "keyboard link focus visible",
+        "primary link reaches section",
+        "empty form rejected",
+        "invalid submission stays idle",
+        "invalid email rejected",
+        "pending prevents duplicate click",
+        "safe input retained on failure",
+        "retry available after failure",
+        "success is explicitly a simulation",
+        "no remote requests",
+        "no JavaScript errors"
+      ],
+      "result": "passed"
+    },
+    {
+      "fixture": "northline/index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "screenshot": "northline-new-mobile.png",
+      "checks": [
+        "no horizontal overflow",
+        "primary destination matches contract",
+        "all local links resolve",
+        "keyboard link focus visible",
+        "primary link reaches section",
+        "empty form rejected",
+        "invalid submission stays idle",
+        "invalid email rejected",
+        "pending prevents duplicate click",
+        "safe input retained on failure",
+        "retry available after failure",
+        "success is explicitly a simulation",
+        "no remote requests",
+        "no JavaScript errors"
+      ],
+      "result": "passed"
+    }
+  ],
+  "totalChecks": 88
+}

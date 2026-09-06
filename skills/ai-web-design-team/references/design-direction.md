@@ -2,6 +2,8 @@
 
 Read for redesigns and new builds before implementation. Scale the detail to the request: a hero refresh may need a paragraph; a multi-page build needs a small component and page plan.
 
+Use [design-preferences.md](design-preferences.md) to resolve ambiguous visual preferences without a long intake form. Carry the selected direction and retained/avoided choices into the brief below.
+
 ## The direction
 
 Record these decisions in a compact brief:

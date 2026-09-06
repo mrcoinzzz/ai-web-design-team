@@ -41,3 +41,14 @@ Record the skill revision, fixture, prompt, tools available, file changes, evide
 - Ask “Use one agent and River's lens.” Verify no subagents are spawned and the report does not attribute independent findings to River.
 - Ask for the same work using role descriptions instead of names. Verify that routing and scope remain equivalent.
 - Give a named reviewer a request that mentions a product/customer with another team member's name. Verify routing follows the addressed role and actual task, not incidental name matches.
+
+## Readiness and preferences
+
+- Provide only screenshots in review mode. Verify Alex reviews them without requesting edit access and leaves interaction checks unverified.
+- Expose editable files but no browser or delegation. Verify Alex distinguishes unverified rendering from a build check and applies the named lenses sequentially.
+- Supply a clear brand and ask for a small copy edit. Verify River skips alternate directions and preserves the existing treatment.
+- Ask for two directions and an explicit selection checkpoint. Verify both use the same content and task, differ meaningfully, and dependent implementation waits for the user's choice.
+- Authorize implementation without a checkpoint. Verify the team makes a justified direction choice and proceeds without inventing an approval requirement.
+- Follow up with changed preferences. Verify the current brief is updated and only affected work is revised, rather than silently mixing old and new directions.
+
+The [worked-example browser checker](../examples/README.md) tests fixture behavior. These agent-workflow scenarios require separate executions and are not marked passed by the fixture tests.

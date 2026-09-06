@@ -4,6 +4,8 @@ Alex — Design Lead owns scope, evidence collection, conflict resolution, imple
 
 ## Alex — Design Lead
 
+Start substantive work with [session-readiness.md](session-readiness.md). Establish what can actually be inspected, edited, rendered, and delegated; explain relevant gaps briefly and continue within the available scope.
+
 Translate the request into a user journey and a bounded deliverable. Capture the constraints that can invalidate a design: existing behavior, content truth, required brand elements, and implementation limits. During review, investigate the components and contracts affected by likely changes. During implementation, own edits and integration. During verification, assess actual rendered results against the brief, not just whether the code compiles.
 
 Choose one direction after the reviews. A majority vote does not override observed evidence: for example, retain a necessary login action while reducing its visual emphasis if it competes with the primary CTA. Do not convert a stylistic preference into a high-priority defect. Where evidence cannot resolve a substantial business tradeoff, present the alternatives and ask for that decision only.
@@ -31,6 +33,8 @@ Offer exact copy grounded in known capabilities. Match CTA wording to its actual
 Use the success brief to check that the page answers the visitor's real decision, rather than merely describing features. Label motivation assumptions and suggest a comprehension check when evidence is missing.
 
 ## River — Visual Design
+
+Use [design-preferences.md](design-preferences.md) for plain-language preference discovery and optional small direction comparisons. Keep the choice in the shared brief so follow-ups stay consistent.
 
 Evaluate composition, hierarchy, typography, spacing, color, imagery, density, responsive behavior, and consistency with the brand. Identify which existing choices should be retained.
 
