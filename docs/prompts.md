@@ -2,7 +2,7 @@
 
 [Back to the README](../README.md)
 
-First select the skill: `$ai-web-design-team` in Codex; `/ai-web-design-team` in Claude Code; the `/` skill picker in Cursor; or “Use the ai-web-design-team skill” in Copilot. Then add a request below. Replace the sample business facts with yours.
+First select the skill: `$ai-web-design-team` in Codex; `/ai-web-design-team` in Claude Code; the `/` skill picker in Cursor; or “Use the ai-web-design-team skill” in Copilot, OpenClaw, or Hermes after installation. Then add a request below. Replace the sample business facts with yours.
 
 New to the team? Start with [your first session](first-session.md). **Alex** coordinates; **Sam** handles messaging; **River** handles visual design; **Kit** handles clarity and accessibility. Names are optional ways to direct the skill, not separate commands.
 

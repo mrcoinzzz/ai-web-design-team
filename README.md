@@ -4,13 +4,15 @@
 
 Meet **Alex, Sam, River, and Kit**: your AI web design team. Alex coordinates the work; Sam sharpens the words; River shapes the look; Kit checks that the site is clear and usable. Use the team to **review a website**, **redesign an existing site**, or **build from scratch**.
 
-Designed for **Codex, Claude Code, Cursor, and GitHub Copilot**. The team is a set of Markdown instructions your coding agent follows with its available tools. No separate AI service, API key, or framework is required by this pack. Your agent subscription and website dependencies still apply.
+Setup guides cover **Codex, Claude Code, Cursor, GitHub Copilot, OpenClaw, and Hermes Agent**. The team is a set of Markdown instructions your coding agent follows with its available tools. No separate AI service, API key, or framework is required by this pack. Your agent subscription and website dependencies still apply.
 
 [Get started](#get-started) · [Example prompts](docs/prompts.md) · [Setup by tool](docs/setup.md) · [Meet the team](#meet-the-team) · [Troubleshooting](docs/setup.md#troubleshooting)
 
 **New to AI design?** A *skill* is a reusable guide for your AI assistant. You talk to Alex in one conversation, and Alex brings in the relevant specialties and gives you one clear result. Start with [your first session](docs/first-session.md); you don't need design vocabulary or experience managing agents.
 
 ## Get started
+
+**Already using OpenClaw or Hermes?** Use their [native installation commands](docs/setup.md#openclaw); you don't need our Python installer. Hermes can install directly from GitHub without downloading this repository first.
 
 ### 1. Download the team
 
@@ -55,6 +57,8 @@ plain language. Don't edit anything yet.
 ```
 
 In **Cursor**, type `/` and select `ai-web-design-team`, then give the request. In **Copilot agent mode**, ask it to use the `ai-web-design-team` skill to review this website. [Tool setup and official sources](docs/setup.md).
+
+In **OpenClaw or Hermes**, after the native installation, ask: “Use the ai-web-design-team skill. Alex, review this website with the team. Don't edit it yet.” Include the URL or project location accessible to that agent.
 
 Give the agent a URL, an open website repository, or screenshots. Include the audience and main action if you know them. You don't need to fill out a questionnaire or manually manage reviewers.
 
@@ -130,5 +134,7 @@ Start by telling the team your brand, preferred examples, and constraints. To ch
 Contributions should include a realistic request, the observed problem, and evidence that the change improves the result. [Contributor guide](CONTRIBUTING.md) · [Behavioral scenarios](evals/scenarios.md).
 
 **Validation status:** installation and package checks are automated. Setup paths are based on official documentation. End-to-end behavior and real-site design quality still need evaluation in each host; documentation support is not a claim that every client was tested.
+
+Our [next improvement priorities](docs/next-improvements.md) focus on real examples, easier setup diagnosis, and better design preference discovery.
 
 Licensed under the [MIT License](LICENSE).

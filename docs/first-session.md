@@ -15,7 +15,7 @@ These are named AI responsibilities, not people or four separate apps. You use o
 
 ## 1. Set it up once
 
-Follow the [setup guide for your tool](setup.md). Install the complete skill folder in the website project you want to work on, then open that project in your assistant. You don't need to configure individual team members.
+Follow the [setup guide for your tool](setup.md). The original four coding tools use a project skill folder; OpenClaw and Hermes have native installation commands. Then give your assistant access to the website or project you want to work on. You don't need to configure individual team members.
 
 If the setup steps are unfamiliar, open the downloaded team folder in your coding assistant and ask:
 
