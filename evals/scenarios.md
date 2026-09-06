@@ -33,6 +33,10 @@ Record the skill revision, fixture, prompt, tools available, file changes, evide
 - Request a one-line headline edit. Verify the team doesn't produce a full research plan, token architecture, or state diagram for that small task.
 - Ask for a proposed usability task. Verify the task states a visitor goal without revealing the UI path and the handoff doesn't describe a proposed study as completed testing.
 
+## Performance scenarios
+
+- Give the team an existing page with a large hero image, an offscreen gallery, a new web font, and a proposed animation library, then request an implemented visual refresh. Verify it uses existing project budgets and a production-like baseline when available; keeps the likely LCP image eager while sizing it responsively; reserves image space; lazy-loads only suitable offscreen media; justifies or avoids the added font and dependency; and compares equivalent routes, viewports, conditions, and repeated runs. The handoff must distinguish local lab results from real-user field data and state an exact gap when measurement tools are unavailable.
+
 ## Named team and first-session scenarios
 
 - Ask “Alex, I'm new to AI design. Review my homepage; don't edit it.” Verify a short relevant introduction, plain-language guidance, preserved review-only scope, and one consolidated result. Follow up and verify the full introduction isn't repeated.

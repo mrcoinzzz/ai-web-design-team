@@ -116,6 +116,7 @@ flowchart LR
 - **Specific:** exact replacement copy and layout changes instead of “make it pop.”
 - **Coherent:** a direction tailored to the audience and brand, carried across the requested pages.
 - **Functional:** required routes, forms, CTA destinations, integrations, and analytics survive a redesign.
+- **Efficient:** performance-relevant changes use deliberate asset loading and comparable checks without sacrificing content or accessibility.
 - **Evidence-based:** visual observations and interaction checks are distinguished. Conversion gains are hypotheses until measured.
 - **Honest:** no invented testimonials, prices, customers, features, successful submissions, or test results.
 

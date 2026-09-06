@@ -16,7 +16,7 @@ The coordinator owns application edits. Reuse current components and tokens wher
 
 Use real copy lengths and responsive layouts. Include meaningful semantic HTML, visible interactive states, and appropriate motion behavior. Avoid unrelated dependency migrations or replacing the whole app to implement a visual change.
 
-For a redesign, retain meaningful document titles, heading structure, internal links, and indexable content unless the requested change calls for updates. Size and load imagery deliberately and avoid new layout shifts or unnecessary animation. Check performance or search-related behavior where the edit can affect it; do not expand every design task into a full performance or SEO audit.
+For a redesign, retain meaningful document titles, heading structure, internal links, and indexable content unless the requested change calls for updates. For work that adds or materially changes images, fonts, scripts, styles, animation, third-party embeds, or dependencies, read [performance.md](performance.md) and preserve comparable baseline evidence when available. Keep checks proportional; do not expand every design task into a full performance or SEO audit.
 
 ## Verification
 
@@ -25,6 +25,7 @@ Read the project's verification instructions and run checks relevant to the chan
 - Render the changed pages at representative desktop and mobile widths, and inspect intermediate widths where the layout changes. Check wrapping, overflow, clipping, image behavior, and content hierarchy.
 - Exercise affected navigation, primary and necessary secondary actions, and relevant form states. Compare against the baseline checklist. Use safe test environments for consequential actions.
 - Check keyboard operation, focus visibility, labels/semantics, and contrast using suitable tools. Distinguish automated checks from manual observations; report their actual coverage.
+- For performance-relevant changes, compare equivalent production-like runs using the project's budgets and tools. Report lab results separately from real-user field evidence and name missing measurement capability.
 - Run applicable build, lint, and existing tests. Add focused regression coverage when changed behavior warrants it; do not create a large suite for a copy-only edit.
 
 Fix failures caused by the work, then repeat affected checks. Report pre-existing failures separately with evidence. If browser execution or an integration is unavailable, finish the accessible work and label visual or behavioral verification as unverified. Do not treat a successful build as proof of correct appearance or functioning interactions.
